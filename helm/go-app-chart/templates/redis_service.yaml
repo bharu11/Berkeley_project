@@ -1,0 +1,13 @@
+# Deploy ClusterIP Services
+apiVersion: v1
+kind: Service
+metadata:
+  name: redis-service
+  namespace: {{ .Values.namespace }}
+spec:
+  ports:
+  - protocol: TCP
+    port: 6379
+    targetPort: redis-port
+  selector:
+    app: redis
