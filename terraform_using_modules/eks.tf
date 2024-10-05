@@ -13,7 +13,7 @@ module "eks" {
 
   vpc_id                   = module.vpc.vpc_id
   subnet_ids               = module.vpc.private_subnets
-  control_plane_subnet_ids = module.vpc.public_subnets
+  //control_plane_subnet_ids = module.vpc.public_subnets
   enable_irsa = true
 
   # EKS Managed Node Group(s)
@@ -28,7 +28,7 @@ module "eks" {
     node_group={
 
       min_size     = 1 
-      max_size     = 10
+      max_size     = 6
       desired_size = 2
     }
   }
