@@ -4,3 +4,5 @@ deployment:
 image:
   repository: bharu11/berkley_pro
   tag: "latest"
+ingress:
+  host: dev-berkeley.bhargavi.life

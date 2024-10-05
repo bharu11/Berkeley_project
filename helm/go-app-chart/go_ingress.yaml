@@ -4,7 +4,7 @@ metadata:
   name: go-app
 spec:
   rules:
-  - host: berkeley.bhargavi.life
+  - host: {{.Values.ingress.host}}
     http:
       paths:
       - path: /
