@@ -1,8 +1,0 @@
-namespace: uat
-deployment:
-  replicas: 1
-image:
-  repository: bharu11/berkley_pro
-  tag: "latest"
-ingress:
-  host: uat.bhargavi.life
