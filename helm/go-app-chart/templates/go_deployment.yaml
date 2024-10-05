@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: go-app
-          image: bharu11/berkley_pro:{{.Values.image.tag}}
+          image: bharu11/berkley_pro:{{ .Values.image.tag}}
           ports:
           - containerPort: 8080
           env:
