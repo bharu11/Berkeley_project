@@ -1,6 +1,0 @@
-namespace: prod
-deployment:
-  replicas: 1
-image:
-  repository: bharu11/berkley_pro
-  tag: "latest"

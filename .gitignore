@@ -1,1 +1,4 @@
 terraform_using_modules/.terraform
+terraform.tfstate
+terraform_using_modules/terraform.state
+terraform_using_modules/terraform.tfstate.backup
