@@ -1,8 +1,8 @@
-namespace: dev
+namespace: uat
 deployment:
   replicas: 1
 image:
   repository: bharu11/berkley_pro
   tag: "latest"
 ingress:
-  host: dev.bhargavi.life
+  host: uat.bhargavi.life
