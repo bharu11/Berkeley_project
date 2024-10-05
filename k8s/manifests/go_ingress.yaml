@@ -1,10 +1,10 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: go-application
+  name: go-app
 spec:
   rules:
-  - host: {{ .Values.ingress.host }}
+  - host: berkeley.bhargavi.life
     http:
       paths:
       - path: /
