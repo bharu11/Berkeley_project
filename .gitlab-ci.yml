@@ -26,4 +26,4 @@ deploy:
     - kubectl config use-context technical_challange/berkeley_project:cicd-agent
   script:
     - kubectl apply -f k8s/manifests/ingress-controller.yaml
-    - helm install go-app-dev ./helm/go-app-chart -f ./helm/go-app-chart/prod_values.yaml
+    - helm install go-app-prod ./helm/go-app-chart -f ./helm/go-app-chart/prod_values.yaml
