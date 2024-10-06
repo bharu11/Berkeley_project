@@ -11,6 +11,10 @@ build-job:
   script:
     - docker build -t $DOCKER_USERNAME/$DOCKER_IMAGE .
     - docker push $DOCKER_USERNAME/$DOCKER_IMAGE
+test-job:
+  stage: test
+  script:
+    - echo "testing"
 deploy:
   stage: deploy
   image:
